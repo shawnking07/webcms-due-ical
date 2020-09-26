@@ -12,10 +12,17 @@
 
 All info on webcms is server-side rendered, resolving html xpath is the best way to grab info.
 
-1. Create conda env
+Create conda env
 
 ```shell script
 conda create -f environment.yaml
 ```
 
-2. ...
+#### Use docker
+
+```shell script
+docker build -t webcms-due-ical .
+docker run -p 8080:80 --name webcms-due-ical webcms-due-ical
+```
+
+Just a simple example here.
