@@ -9,6 +9,7 @@ from .due_model import DueModel
 def generate_ical(info: List[DueModel]):
     cal = Calendar()
     cal['summary'] = "WebCMS3 Due date calendar"
+    cal['X-WR-CALNAME'] = "WebCMS3"
 
     event = Event()
     event.add('summary', "NEW")
